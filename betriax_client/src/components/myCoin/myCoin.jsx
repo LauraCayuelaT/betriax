@@ -38,7 +38,7 @@ const MyCoin = ()=>{
           <table className={style.table}>
             <thead>
               <tr>
-                <th>Moneda</th>
+                <th>MiMoneda</th>
                 <th>Precio Actual</th>
               </tr>
             </thead>

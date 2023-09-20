@@ -1,24 +1,30 @@
 .container {
-    max-width: 600px; 
-    margin: 50px 30px; 
-    display: flex;
-    flex-wrap: wrap;
-    
-  }
+  max-width: 600px; 
+  margin: 50px 30px; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
 
 .table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 500px;
+  border-collapse: collapse;
+  
 }
 
 .table th,
 .table td {
-  border: 1px solid #ccc; 
-  padding: 8px; 
-  text-align: center; 
+border: 1px solid black; 
+padding: 8px; 
+text-align: center; 
+color:black
 }
 
 .table th {
-    /* background-color: #8B0000;  */
-    background-color: #4f717c;
-  }
+  /* background-color: #8B0000;  */
+  background-color: #00485e;
+  color:white
+}

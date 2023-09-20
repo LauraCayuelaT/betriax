@@ -1,8 +1,6 @@
 .container{
     
     display: flex;
-    background-color: hsla(0, 0%, 0%, 0.2);
-    border-radius: 10px;
     height: max-content;
     flex-wrap: wrap;
     width: 90%;
@@ -20,7 +18,7 @@
   .CoinsContainer {
     display: flex;
     flex-direction: row; 
-    justify-content: center; 
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
   }

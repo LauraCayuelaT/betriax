@@ -3,24 +3,68 @@
     margin: 50px 30px; 
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    
+    
     
     
   }
 
+  .overlay {
+    position: relative;
+    background-color: transparent; /* Fondo transparente */
+    transition: background-color 0.3s ease;
+  }
+
 .table {
-    width: 100%;
+    width: 500px;
     border-collapse: collapse;
-    border-radius: 20px;
+    
+    
+}
+
+.table:hover {
+  background-color: rgba(240, 240, 240, 0.181); /* Color de fondo semitransparente */
+}
+
+
+
+.button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 60px;
+  width: 300px;
+  padding: 5px 10px;
+  background-color: #002434;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  font-size: 40px;
+}
+
+.overlay:hover .button {
+  opacity: 10;
 }
 
 .table th,
 .table td {
-  border: 1px solid #ccc; 
+  border: 1px solid black; 
   padding: 8px; 
   text-align: center; 
+  background-color: white;
+  color: black
 }
+
 
 .table th {
     /* background-color: #8B0000;  */
-    background-color: #4f717c;
+    background-color: #00485e;
+    color:white
   }

@@ -1,7 +1,8 @@
 import style from "./coin.module.css";
-import { Link } from "react-router-dom";
+import { useHistory} from "react-router-dom";
 
 const Coin = ({id,name, current_price, market_cap, key})=>{
+        const history = useHistory();
 
         const formattedPrice = current_price.toLocaleString('en-US', {
         style: 'currency',
@@ -12,9 +13,15 @@ const Coin = ({id,name, current_price, market_cap, key})=>{
             style: 'currency',
             currency: 'USD',
           });
+        
+        const handleOnClick = ()=>{
+          history.push(`/detail/${id}`)
+        }
+
     
         return (
           <div className={style.container}>
+            <div className={style.overlay}>
             <table className={style.table}>
               <thead>
                 <tr>
@@ -26,15 +33,17 @@ const Coin = ({id,name, current_price, market_cap, key})=>{
               <tbody>
                 
                   <tr key={key}>
-                    <Link to={`/detail/${id}`}>
+                    
+                    {/* <td><Link to={`/detail/${id}`}>{name}</Link></td> */}
                     <td>{name}</td>
-                    </Link>
                     <td>{formattedPrice}</td>
                     <td>{mktFormattedPrice}</td>
                   </tr>
                 
               </tbody>
             </table>
+            <button className={style.button} onClick={handleOnClick} >Detalle</button>
+            </div>
           </div>
         );
 

@@ -1,15 +1,21 @@
 .container{
   /* background: linear-gradient(45deg, #000000, #8B0000); */
-  background: linear-gradient(45deg, #949fa3, #6d858d);
-  height: auto;
+  /* background: linear-gradient(45deg, #387e98, #2aacac); */
+  min-height: 100vh;
   margin: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
   text-align: center;
   position: relative;
   flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+
+/* titulos#002434   */
+/* Fondo #00feff */
+/* Botones #00b4d5 */
+/* Contenedores #007794 */
+/* Titulo tabla #00485e */
+/* Letras white */
 

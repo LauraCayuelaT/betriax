@@ -1,0 +1,34 @@
+.input{
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  width:300px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: large;
+  margin-right: 10px;
+  margin-bottom: 20px;
+
+}
+
+.button{
+    background-color: #002434;
+    border: 1px solid #002434;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: large;
+    margin-right: 6px; 
+    color: white;
+    font-weight: bold;
+}
+
+.select{
+    background-color: #002434;
+    border: 1px solid #002434;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: large;
+    margin-right: 6px; 
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}

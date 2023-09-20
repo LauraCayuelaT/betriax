@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
 import { getCoinByName, getAllCoins, originalOrder, orderByPrice } from "../../redux/actions";
+import style from "./NavBar.module.css"
 
 const NavBar = ({setPage})=>{
 
@@ -41,11 +42,13 @@ const NavBar = ({setPage})=>{
         <input type="search"
                 value = {name}
                 onChange = {handleChange}
+                className={style.input}
         />
-        <button onClick={()=>onSearch(name)}>Buscar</button>
-        <button onClick={()=>reset()}>Volver</button>
+        <button onClick={()=>onSearch(name)} className={style.button}>Buscar</button>
+        <button onClick={()=>reset()} className={style.button}>Volver</button>
+        <br />
 
-        <select onChange={handleChangePrice}>
+        <select onChange={handleChangePrice} className={style.select}>
             <option value="Original Order">Ordenar por Precio</option>
             <option value="S to L">Menor a Mayor</option>
             <option value="L to S">Mayor a Menor</option>
