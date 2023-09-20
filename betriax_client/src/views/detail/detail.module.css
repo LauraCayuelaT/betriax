@@ -12,6 +12,8 @@
     font-size: 80px; 
     font-weight: bold; 
     font-family: Copperplate, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    
     
   }
 
@@ -25,10 +27,7 @@
     border-radius: 10px;
     background-color: #093f56;
     margin-bottom: 40px;
-    
-
-
-    
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);   
 }
 
 .button{
@@ -40,7 +39,6 @@
 
 .customButton{
 
-   
     background-color: #002434;
     border: 1px solid #002434;
     border-radius: 5px;
@@ -49,7 +47,17 @@
     margin-right: 6px; 
     color: white;
     font-weight: bold;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s, color 0.3s, transform 0.2s ease-in-out;
+    cursor: pointer;
 }
+
+.customButton:hover {
+    background-color: #001c29; /* Cambia el color de fondo en hover */
+    color: #fff; /* Cambia el color del texto en hover */
+    transform: scale(1.23); /* Cambia el tamaño del botón en hover */
+  }
+
 
 .name{
     color:white;

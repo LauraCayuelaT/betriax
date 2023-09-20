@@ -1,11 +1,13 @@
 .title{
-    background: #002434;
+  
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,36,52,1) 19%, rgba(0,119,148,1) 100%);
      -webkit-background-clip: text; 
      background-clip: text;
     color: transparent; 
     font-size: 80px; 
     font-weight: bold; 
     font-family: Copperplate, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
   }
 
 .container {
