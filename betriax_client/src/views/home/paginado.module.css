@@ -1,0 +1,24 @@
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #036666;
+}
+
+.button{
+    background-color: #036666;
+    border-radius: 3px;
+    color: white;
+    font-style: bold;
+    border: 1px solid #036666;
+    font-family: monospace;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    text-shadow: 7px 3px 3px black;
+}
+
+.active {
+    background-color: #6fd6b8;
+    color: white;
+  }

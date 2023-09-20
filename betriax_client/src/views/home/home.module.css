@@ -1,0 +1,15 @@
+.title{
+    background: linear-gradient(to right, #e8eff1, #c7d2d6);
+     -webkit-background-clip: text; /* Webkit (Safari/Chrome) */
+     background-clip: text; /* Estándar */
+    color: transparent; /* Hacer el texto transparente */
+    font-size: 80px; /* Tamaño del texto */
+    font-weight: bold; 
+    font-family: Copperplate, sans-serif;
+  }
+
+.container {
+  display: flex;
+  flex-direction: column;
+  
+}

@@ -1,0 +1,15 @@
+.container{
+  /* background: linear-gradient(45deg, #000000, #8B0000); */
+  background: linear-gradient(45deg, #949fa3, #6d858d);
+  height: auto;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+
