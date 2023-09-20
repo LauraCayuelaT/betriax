@@ -15,3 +15,13 @@
   align-items: center;
   
 }
+
+.fondo{
+  width: 100%;
+  background-image: url('./../../14624.jpg'); 
+  background-size: cover; 
+  background-position:center;
+  height: 150px;
+  background-color: rgba(255, 255, 255, 0.5);
+  
+}

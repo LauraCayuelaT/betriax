@@ -38,6 +38,8 @@ const Home =()=>{
     },[dispatch])
 
     return <div className = {style.container}>
+        <div className={style.fondo}>
+        </div>
             <h1 className={style.title}>CriptoCoins</h1>
             <div>
             <NavBar setPage = {setPage}/>   
@@ -45,6 +47,8 @@ const Home =()=>{
             <footer>
             <Paginado page={page} setPage = {setPage} max= {max}/>
         </footer>
+
+       
             
             <CoinsContainer coins = {coins}/>
     </div>

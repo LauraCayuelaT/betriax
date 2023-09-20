@@ -1,6 +1,5 @@
 .container{
-  /* background: linear-gradient(45deg, #000000, #8B0000); */
-  /* background: linear-gradient(45deg, #387e98, #2aacac); */
+  
   min-height: 100vh;
   margin: 0;
   text-align: center;
@@ -9,6 +8,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  
+
 }
 
 
