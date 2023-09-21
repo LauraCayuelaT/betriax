@@ -44,13 +44,14 @@ const Home =()=>{
             <div>
             <NavBar setPage = {setPage}/>   
             </div>
+            <hr  className={style.line}/>
             <footer>
             <Paginado page={page} setPage = {setPage} max= {max}/>
         </footer>
 
        
             
-            <CoinsContainer coins = {coins}/>
+            <CoinsContainer coins = {coins} page={page}/>
     </div>
 }
 

@@ -5,7 +5,8 @@ export const GET_COIN_BY_NAME = "GET_COIN_BY_NAME";
 export const ORIGINAL_ORDER = "ORIGINAL_ORDER";
 export const ORDER_BY_PRICE = "ORDER_BY_PRICE";
 export const GET_COIN_BY_ID = "GET_COIN_BY_ID";
-export const DELETE_COIN="DELETE_COIN"
+export const DELETE_COIN="DELETE_COIN";
+export const RESET_COINS ="RESET_COINS"
 
 
 
@@ -64,4 +65,12 @@ export const deleteCoin = ()=>{
         dispatch({type:DELETE_COIN})
     }
 }
+
+export const resetCoins = ()=>{
+    return function (dispatch){
+        dispatch({type:RESET_COINS})
+    }
+}
+
+
 

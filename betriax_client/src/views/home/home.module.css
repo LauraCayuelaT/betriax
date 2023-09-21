@@ -15,6 +15,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin:0;
+  
   
 }
 
@@ -23,7 +26,15 @@
   background-image: url('./../../14624.jpg'); 
   background-size: cover; 
   background-position:center;
-  height: 150px;
+  height: 100px;
   background-color: rgba(255, 255, 255, 0.5);
   
+  
+  
+}
+
+.line{
+  color: black;
+  width: 100%;
+
 }

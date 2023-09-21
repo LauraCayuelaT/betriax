@@ -28,7 +28,7 @@ app.use(cors())
 let currentPrice = Math.floor(Math.random() * 10000) + 1
 
 let myCoin = {
-  name: "BeatrixToken",
+  name: "BeatCoin",
   current_price: currentPrice}
 
 

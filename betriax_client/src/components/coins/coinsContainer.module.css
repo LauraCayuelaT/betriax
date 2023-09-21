@@ -12,7 +12,10 @@
 }
 
 .myCoin {
-    margin-bottom: 20px;    
+    margin-bottom: 20px;   
+    border: solid black;
+    border-radius: 10px; 
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);
   }
 
   .CoinsContainer {
@@ -23,5 +26,13 @@
     flex-wrap: wrap;
   }
 
+
+  .h1{
+
+    color: #002434;
+    font-size: larger;
+    font-weight: bold;
+
+  }
 
 

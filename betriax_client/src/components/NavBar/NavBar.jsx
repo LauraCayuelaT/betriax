@@ -1,28 +1,28 @@
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { getCoinByName, getAllCoins, originalOrder, orderByPrice } from "../../redux/actions";
+import { getCoinByName, originalOrder, orderByPrice, resetCoins } from "../../redux/actions";
 import style from "./NavBar.module.css"
 
 const NavBar = ({setPage})=>{
 
     const [name, setName] = useState("");
     const dispatch = useDispatch();
+    
+    
 
     const handleChange = (e)=>{
         setName(e.target.value);
     }
 
     const onSearch = (input)=>{
-        try{
             dispatch(getCoinByName(input))
-            setName("")
-            setPage(1)
-        }
-        catch(err){window.alert("No hay monedas con ese nombre")}
+            setName("") 
+            setPage(1)         
     }
 
     const reset = ()=>{
-        dispatch(getAllCoins())
+        dispatch(resetCoins())
+        
     }
 
     const handleChangePrice = (e)=>{
@@ -37,8 +37,11 @@ const NavBar = ({setPage})=>{
         }
     }
 
+    
+
     return (
         <>
+        
         <input type="search"
                 value = {name}
                 onChange = {handleChange}
@@ -58,6 +61,6 @@ const NavBar = ({setPage})=>{
         </>  
     )
 
-}
+} 
 
 export default NavBar;
