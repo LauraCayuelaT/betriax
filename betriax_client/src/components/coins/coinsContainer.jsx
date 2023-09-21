@@ -2,19 +2,28 @@ import Coin from "../coin/coin"
 import style from "./coinsContainer.module.css"
 import MyCoin from "../myCoin/myCoin";
 import { useSelector} from "react-redux";
+import { useState } from "react";
 
 
 const CoinsContainer =(props)=>{
 
     const {coins, page} = props;
     const name = useSelector(state=>state.search)
+    const [showMyCoin, setShowMyCoin] = useState(false);
 
+    const toggleMyCoin = () => {
+        setShowMyCoin(!showMyCoin);
+    };
     
 
     return (
         <div className={style.container}>
+
+             <button onClick={toggleMyCoin} className = {style.button}>
+             {showMyCoin ? "Ocultar Mi Moneda" : "Mostrar Mi Moneda"}
+            </button>
             
-            { page === 1 && !name &&
+            { showMyCoin && page === 1 && !name &&
             <div className={style.myCoin}>
             <MyCoin />
             </div> }
